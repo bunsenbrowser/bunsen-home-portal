@@ -14311,7 +14311,7 @@ module.exports = DefaultManager
 const DatArchive = require('./DatArchive')
 const DefaultManager = require('./DefaultManager')
 
-let DEFAULT_GATEWAY = 'http://gateway.mauve.moe:3000'
+let DEFAULT_GATEWAY = 'http://localhost:3000'
 
 DatArchive.setManager(new DefaultManager(DEFAULT_GATEWAY))
 
@@ -53258,7 +53258,7 @@ const URLParse = require('url-parse')
 
 const MATCH_GATEWAY = /DAT_GATEWAY=([^&]+)/
 const BASE_32_KEY_LENGTH = 52
-const DEFAULT_GATEWAY = `http:gateway.mauve.moe:3000`
+const DEFAULT_GATEWAY = `http:localhost:3000`
 
 if (!window.DatArchive) {
   doPolyfill()
